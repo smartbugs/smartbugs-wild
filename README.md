@@ -2,9 +2,9 @@
 
 This repository contain the 47,518 smart-contact extracted from the Ethereum network.
 
-SmartBugs is available at: https://anonymous.4open.science/r/96fac4dd-5321-4abd-8399-246aac702fc6/
+SmartBugs is available at: https://github.com/smartbugs/smartbugs
 
-The results of the analysis of those contract is available at: https://anonymous.4open.science/r/d41bf027-c22b-4915-b41a-7afaa123a127/
+The results of the analysis of those contract is available at: https://github.com/smartbugs/smartbugs-results
 
 ## Structure of the repository
 
