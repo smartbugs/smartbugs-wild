@@ -1,10 +1,10 @@
 # SmartBugs Wild Dataset
 
-This repository contain the 47,518 smart-contact extracted from the Ethereum network.
+This repository contains 47,518 smart contracts extracted from the Ethereum network.
 
-SmartBugs is available at: https://github.com/smartbugs/smartbugs
-
-The results of the analysis of those contract is available at: https://github.com/smartbugs/smartbugs-results
+[SmartBugs](https://github.com/smartbugs/smartbugs) was used to analyze this
+dataset. The results are available at: [https://github.com/smartbugs/smartbugs-results](https://github.com/smartbugs/smartbugs-results)
+For more details on the analysis, please see [the ICSE 2020 paper](https://arxiv.org/abs/1910.10601).
 
 ## Structure of the repository
 
@@ -32,7 +32,7 @@ SELECT contracts.address, COUNT(1) AS tx_count
 ```
 2. Download the source code related to the contract addresses 
 We use Etherscan to download to the contracts (the script of the collect is available in `script`).
-3. We filter the contract by identifying the duplicate
+3. We filter the contracts by identifying duplicates
 
 ## Metric
 
