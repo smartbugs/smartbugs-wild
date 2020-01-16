@@ -34,7 +34,7 @@ SELECT contracts.address, COUNT(1) AS tx_count
 We use Etherscan to download to the contracts (the script of the collect is available in `script`).
 3. We filter the contracts by identifying duplicates
 
-## Metric
+## Metrics
 
 | Metric                        | Value   |
 | ----------------------------- | ------- |
