@@ -1,6 +1,6 @@
 # SmartBugs Wild Dataset
 
-This repository contains 47,518 smart contracts extracted from the Ethereum network.
+This repository contains 47,398 smart contracts extracted from the Ethereum network.
 
 [SmartBugs](https://github.com/smartbugs/smartbugs) was used to analyze this
 dataset. The results are available at: [https://github.com/smartbugs/smartbugs-results](https://github.com/smartbugs/smartbugs-results)
@@ -39,8 +39,9 @@ We use Etherscan to download to the contracts (the script of the collect is avai
 | Metric                        | Value   |
 | ----------------------------- | ------- |
 | Solidity source not available | 1290074 |
-| Solidity source available     | 972975  |
+| Solidity source available     | 972855  |
 | Unaccessible                  | 47      |
+| Invalid                       | 120     |
 | Total                         | 2263096 |
-| Unique Solidity Contracts     | 47518   |
+| Unique Solidity Contracts     | 47398   |
 | LOC of the unique contracts   | 9693457 |
