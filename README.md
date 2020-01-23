@@ -19,7 +19,7 @@ For more details on the analysis, please see [the ICSE 2020 paper](https://arxiv
 
 ## Creation of the dataset
 
-1. Collect the contract addresses
+1. Collect the contract addresses.
 We use Google BigQuery to select all the contracts that have at least one transaction.
 We use the following request (also available here: https://bigquery.cloud.google.com/savedquery/281902325312:47fd9afda3f8495184d98db6ae36a40c)
 ```sql
@@ -30,9 +30,9 @@ SELECT contracts.address, COUNT(1) AS tx_count
   GROUP BY contracts.address
   ORDER BY tx_count DESC
 ```
-2. Download the source code related to the contract addresses 
-We use Etherscan to download to the contracts (the script of the collect is available in `script`).
-3. We filter the contracts by identifying duplicates
+2. Download the source code related to the contract addresses. 
+We use [Etherscan](https://etherscan.io) to download to the contracts (the script of the collect is available in `script`).
+3. We filter the contracts by identifying and removing duplicates.
 
 ## Metrics
 
@@ -45,3 +45,7 @@ We use Etherscan to download to the contracts (the script of the collect is avai
 | Total                         | 2263096 |
 | Unique Solidity Contracts     | 47398   |
 | LOC of the unique contracts   | 9693457 |
+
+## License
+
+The license in the file `LICENSE` applies to all the files in this repository, except for all the files in the `contracts` folder. The files in this folder are publicly available, were obtained using the [Etherscan APIs](https://etherscan.io/apis), and retain their original licenses. Please contact us for any additional questions.
