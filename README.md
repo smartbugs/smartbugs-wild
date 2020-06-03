@@ -19,9 +19,9 @@ For more details on the analysis, please see [the ICSE 2020 paper](https://arxiv
 
 ## Creation of the dataset
 
-1. Collect the contract addresses.
-We use Google BigQuery to select all the contracts that have at least one transaction.
-We use the following request (also available here: https://bigquery.cloud.google.com/savedquery/281902325312:47fd9afda3f8495184d98db6ae36a40c)
+1. **Collection of the contract addresses.**
+We used Google BigQuery to select all the contracts that have at least one transaction.
+The collection was performed on the 8th of August 2019. We used the following request (also available here: https://bigquery.cloud.google.com/savedquery/281902325312:47fd9afda3f8495184d98db6ae36a40c)
 ```sql
 SELECT contracts.address, COUNT(1) AS tx_count
   FROM `ethereum_blockchain.contracts` AS contracts
@@ -30,9 +30,10 @@ SELECT contracts.address, COUNT(1) AS tx_count
   GROUP BY contracts.address
   ORDER BY tx_count DESC
 ```
-2. Download the source code related to the contract addresses. 
-We use [Etherscan](https://etherscan.io) to download to the contracts (the script of the collect is available in `script`).
-3. We filter the contracts by identifying and removing duplicates.
+
+2. **Downloading the source code associated with the contract addresses.**
+We used [Etherscan](https://etherscan.io) to download the contracts (the script used for the collection is available in the folder `script`).
+3. We filtered the contracts by identifying and removing duplicates.
 
 ## Metrics
 
